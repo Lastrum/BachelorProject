@@ -1,3 +1,4 @@
+using Manager;
 using UnityEngine;
 
 namespace Player
@@ -29,14 +30,14 @@ namespace Player
             //Jump Check
             if (controller.isGrounded)
             {
-                if (Input.GetKeyDown(KeyCode.UpArrow))
+                if (Input.GetKeyDown(KeyCode.UpArrow) || SwipeManager.swipeUp)
                 {
                     Jump();
                 }
             }
             
             //Get Input
-            if (Input.GetKeyDown(KeyCode.RightArrow))
+            if (Input.GetKeyDown(KeyCode.RightArrow) || SwipeManager.swipeRight) 
             {
                 desiredLane++;
                 if (desiredLane == 3)
@@ -44,7 +45,7 @@ namespace Player
                     desiredLane = 2;
                 }
             }
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            if (Input.GetKeyDown(KeyCode.LeftArrow) || SwipeManager.swipeLeft)
             {
                 desiredLane--;
                 if (desiredLane == -1)
