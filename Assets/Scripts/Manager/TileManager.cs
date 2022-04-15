@@ -15,6 +15,8 @@ namespace Manager
         [SerializeField] private int maxNumOfTiles;
         [SerializeField] private Transform playerTransform;
 
+        [SerializeField] private int defaultSpawn = 0;
+        
         private List<GameObject> activeTiles = new List<GameObject>();
         
 
@@ -24,7 +26,7 @@ namespace Manager
             {
                 if (i == 0)
                 {
-                    SpawnTile(0);
+                    SpawnTile(defaultSpawn);
                 }
                 else
                 {
