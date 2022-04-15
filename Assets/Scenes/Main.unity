@@ -685,6 +685,8 @@ MonoBehaviour:
   tileLength: 50
   maxNumOfTiles: 3
   playerTransform: {fileID: 1559102776}
+  defaultSpawn: 0
+  flat: 1
 --- !u!1 &960005865
 GameObject:
   m_ObjectHideFlags: 0
