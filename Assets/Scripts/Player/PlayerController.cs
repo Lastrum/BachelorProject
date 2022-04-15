@@ -1,3 +1,4 @@
+using System;
 using Manager;
 using UnityEngine;
 
@@ -24,9 +25,11 @@ namespace Player
 
         private void Update()
         {
+            if(PlayerManager.gameOver) return;
+            
             direction.z = forwardSpeed;
             direction.y += gravity * Time.deltaTime;
-            
+
             //Jump Check
             if (controller.isGrounded)
             {
@@ -35,9 +38,9 @@ namespace Player
                     Jump();
                 }
             }
-            
+
             //Get Input
-            if (Input.GetKeyDown(KeyCode.RightArrow) || SwipeManager.swipeRight) 
+            if (Input.GetKeyDown(KeyCode.RightArrow) || SwipeManager.swipeRight)
             {
                 desiredLane++;
                 if (desiredLane == 3)
@@ -45,6 +48,7 @@ namespace Player
                     desiredLane = 2;
                 }
             }
+
             if (Input.GetKeyDown(KeyCode.LeftArrow) || SwipeManager.swipeLeft)
             {
                 desiredLane--;
@@ -53,7 +57,7 @@ namespace Player
                     desiredLane = 0;
                 }
             }
-        
+
             //Calculate where we should be in the future
             Vector3 targetPosition = transform.position.z * transform.forward + transform.position.y * transform.up;
 
@@ -63,12 +67,24 @@ namespace Player
             }
             else if (desiredLane == 2)
             {
-                targetPosition += Vector3.right * laneDistance; 
+                targetPosition += Vector3.right * laneDistance;
             }
-
-            //transform.position = targetPosition;
+            
             transform.position = Vector3.Lerp(transform.position, targetPosition, transitionSpeed * Time.fixedDeltaTime);
-
+            controller.center = controller.center;
+            
+            /*if (transform.position == targetPosition)
+                return;
+            Vector3 diff = targetPosition - targetPosition;
+            Vector3 moveDir = diff.normalized * 25 * Time.fixedDeltaTime;
+            if (moveDir.sqrMagnitude < diff.sqrMagnitude)
+            {
+                controller.Move(moveDir);
+            }
+            else
+            {
+                controller.Move(diff);
+            }*/
         }
 
         private void FixedUpdate()
@@ -79,6 +95,14 @@ namespace Player
         private void Jump()
         {
             direction.y = jumpForce;
+        }
+
+        private void OnControllerColliderHit(ControllerColliderHit hit)
+        {
+            if (hit.gameObject.CompareTag("Obstacle"))
+            {
+                PlayerManager.gameOver = true;
+            }
         }
     }
 }
