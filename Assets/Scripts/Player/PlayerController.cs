@@ -41,7 +41,9 @@ namespace Player
         
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Alpha1))
+            if (MenuManager.currentMenu != MenuType.GameHud) return;
+            
+            if (Input.GetKeyDown(KeyCode.Alpha1) || playerInput.GetTapInput())
             {
                 SetPlayerBehaviour(Behaviour.Running);
             }

@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 namespace Menus
 {
-    public class GameOverMenu : MonoBehaviour
+    public class DeathMenu : MonoBehaviour
     {
         public void RespawnButton()
         {

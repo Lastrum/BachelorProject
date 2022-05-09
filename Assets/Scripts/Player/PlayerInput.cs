@@ -7,6 +7,12 @@ namespace Player
     {
         [SerializeField] private PlayerController playerController;
 
+
+        public bool GetTapInput()
+        {
+            return Input.GetKeyDown(KeyCode.Space) || SwipeManager.tap;
+        }
+        
         public bool GetLeftInput()
         {
             return Input.GetKeyDown(KeyCode.LeftArrow) || SwipeManager.swipeLeft;
