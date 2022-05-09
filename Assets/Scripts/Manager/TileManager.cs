@@ -14,21 +14,32 @@ namespace Manager
         [SerializeField] private float tileLength = 30;
         [SerializeField] private int maxNumOfTiles;
         [SerializeField] private Transform playerTransform;
-
+        [SerializeField] private int defaultSpawn;
+        [SerializeField] private bool flat;
+        
         private List<GameObject> activeTiles = new List<GameObject>();
         
 
         private void Start()
         {
+
             for (int i = 0; i < maxNumOfTiles; i++)
             {
-                if (i == 0)
+
+                if (flat)
                 {
                     SpawnTile(0);
                 }
                 else
                 {
-                    SpawnTile(Random.Range(1, tilePrefabs.Count));
+                    if (i == 0)
+                    {
+                        SpawnTile(defaultSpawn);
+                    }
+                    else
+                    {
+                        SpawnTile(Random.Range(1, tilePrefabs.Count));
+                    } 
                 }
             }
         }
@@ -37,7 +48,14 @@ namespace Manager
         {
             if (playerTransform.position.z - tileLength + 5 > zSpawn - (maxNumOfTiles * tileLength))
             {
-                SpawnTile(Random.Range(1, tilePrefabs.Count));
+                if (flat)
+                {
+                    SpawnTile(0);
+                }   
+                else
+                {
+                    SpawnTile(Random.Range(1, tilePrefabs.Count));
+                }
                 DeleteTile();
             }
         }

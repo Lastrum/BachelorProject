@@ -6,103 +6,67 @@ namespace Player
 {
     public class PlayerController : MonoBehaviour
     {
-        [SerializeField] private float forwardSpeed;
-    
-        private CharacterController controller;
-        private Vector3 direction;
-
-        private int desiredLane = 1; //0:Left 1:Middle 2:Right
-        [SerializeField] private float laneDistance = 4; //distance between 2 lanes
-        [SerializeField] private int transitionSpeed;
-
-        [SerializeField] private float jumpForce;
-        [SerializeField] private float gravity = -20;
+        [SerializeField] public PlayerInput playerInput;
+        [SerializeField] public PlayerMovement playerMovement;
+        [SerializeField] public PlayerCollision playerCollision;
         
-        private void Start()
+        [SerializeField] public Behaviour currentBehaviour;
+        [SerializeField] public SubBehaviour currentSubBehaviour;
+        
+        [Header("Lane")]
+        [SerializeField] public int transitionSpeed;
+        [SerializeField] public float laneDistance = 4; //distance between 2 lanes
+        [SerializeField] public Lane currentLane;
+        
+        [NonSerialized] public CharacterController controller;
+
+        private void Awake()
         {
             controller = GetComponent<CharacterController>();
+            currentLane = Lane.Middle;
+
+            currentBehaviour = Behaviour.Idle;
+            currentSubBehaviour = SubBehaviour.Nothing;
+        }
+        
+        public void SetPlayerBehaviour(Behaviour value)
+        {
+            currentBehaviour = value;
         }
 
+        public void SetPlayerSubBehaviour(SubBehaviour value)
+        {
+            currentSubBehaviour = value;
+        }
+        
         private void Update()
         {
-            if(PlayerManager.gameOver) return;
-            
-            direction.z = forwardSpeed;
-            direction.y += gravity * Time.deltaTime;
-
-            //Jump Check
-            if (controller.isGrounded)
+            if (Input.GetKeyDown(KeyCode.Alpha1))
             {
-                if (Input.GetKeyDown(KeyCode.UpArrow) || SwipeManager.swipeUp)
-                {
-                    Jump();
-                }
+                SetPlayerBehaviour(Behaviour.Running);
             }
-
-            //Get Input
-            if (Input.GetKeyDown(KeyCode.RightArrow) || SwipeManager.swipeRight)
-            {
-                desiredLane++;
-                if (desiredLane == 3)
-                {
-                    desiredLane = 2;
-                }
-            }
-
-            if (Input.GetKeyDown(KeyCode.LeftArrow) || SwipeManager.swipeLeft)
-            {
-                desiredLane--;
-                if (desiredLane == -1)
-                {
-                    desiredLane = 0;
-                }
-            }
-
-            //Calculate where we should be in the future
-            Vector3 targetPosition = transform.position.z * transform.forward + transform.position.y * transform.up;
-
-            if (desiredLane == 0)
-            {
-                targetPosition += Vector3.left * laneDistance;
-            }
-            else if (desiredLane == 2)
-            {
-                targetPosition += Vector3.right * laneDistance;
-            }
-            
-            transform.position = Vector3.Lerp(transform.position, targetPosition, transitionSpeed * Time.fixedDeltaTime);
-            controller.center = controller.center;
-            
-            /*if (transform.position == targetPosition)
-                return;
-            Vector3 diff = targetPosition - targetPosition;
-            Vector3 moveDir = diff.normalized * 25 * Time.fixedDeltaTime;
-            if (moveDir.sqrMagnitude < diff.sqrMagnitude)
-            {
-                controller.Move(moveDir);
-            }
-            else
-            {
-                controller.Move(diff);
-            }*/
         }
 
-        private void FixedUpdate()
+        public enum Lane
         {
-            controller.Move(direction * Time.deltaTime);
+            Left,
+            Middle,
+            Right
         }
 
-        private void Jump()
+        public enum Behaviour
         {
-            direction.y = jumpForce;
+            Idle,
+            Running,
+            Dead
         }
 
-        private void OnControllerColliderHit(ControllerColliderHit hit)
+        public enum SubBehaviour
         {
-            if (hit.gameObject.CompareTag("Obstacle"))
-            {
-                PlayerManager.gameOver = true;
-            }
+            Nothing,
+            Jumping,
+            Sliding,
         }
     }
 }
+
