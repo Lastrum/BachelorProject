@@ -2,6 +2,7 @@ using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using Manager;
+using TMPro;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 using UnityEngine.UI;
@@ -14,6 +15,8 @@ namespace Player
     {
         [SerializeField] private PlayerController playerController;
 
+        [SerializeField] private TextMeshProUGUI modeText;
+        
         [SerializeField] private Transform groundCheck;
         [SerializeField] private LayerMask groundLayer;
         private bool isGrounded;
@@ -41,6 +44,9 @@ namespace Player
         {
             if (playerController.currentBehaviour is PlayerController.Behaviour.Idle or PlayerController.Behaviour.Dead) return;
             
+            //Temp Remove later
+            UpdateText();
+
             //IfGrounded
             if (isGrounded && jumped)
             {
@@ -80,7 +86,7 @@ namespace Player
             transform.position = Vector3.Lerp(transform.position, targetPosition, playerController.transitionSpeed * Time.fixedDeltaTime);
             playerController.controller.center = playerController.controller.center;
         }
-
+        
         private void FixedUpdate()
         {
             if (playerController.currentBehaviour is PlayerController.Behaviour.Idle or PlayerController.Behaviour.Dead) return;
@@ -169,5 +175,11 @@ namespace Player
             await Task.Delay(TimeSpan.FromSeconds(slideLength));
             playerController.SetPlayerSubBehaviour(SubBehaviour.Nothing);
         }
+        
+        private void UpdateText()
+        {
+            modeText.text = $"Mode: {playerController.currentSubBehaviour}";
+        }
+
     }
 }
