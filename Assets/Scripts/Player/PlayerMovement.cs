@@ -41,6 +41,13 @@ namespace Player
         {
             if (playerController.currentBehaviour is PlayerController.Behaviour.Idle or PlayerController.Behaviour.Dead) return;
             
+            //IfGrounded
+            if (isGrounded && jumped)
+            {
+                playerController.SetPlayerSubBehaviour(SubBehaviour.Nothing);
+                jumped = false;
+            }
+            
             //Moves Forward
             direction.z = forwardSpeed;
             direction.y += gravity * Time.deltaTime;
@@ -68,7 +75,6 @@ namespace Player
             }
             
             HandleLane();
-            
             SubBehaviourChecker();
             
             transform.position = Vector3.Lerp(transform.position, targetPosition, playerController.transitionSpeed * Time.fixedDeltaTime);
@@ -137,15 +143,15 @@ namespace Player
             switch (playerController.currentSubBehaviour)
             {
                 case SubBehaviour.Jumping:
-                    //Jump();
+                    Jump();
                     break;
                 case SubBehaviour.Sliding:
-                    //Slide();
+                    Slide();
                     break;
             }
         }
 
-        /*private async void Jump()
+       private async void Jump()
         {
             if (isGrounded && !jumped)
             {
@@ -153,20 +159,15 @@ namespace Player
                 await Task.Delay(TimeSpan.FromSeconds(0.5f));
                 jumped = true;
             }
-            if (!isGrounded || !jumped) return;
-            playerController.SetPlayerSubBehaviour(SubBehaviour.Nothing);
-            jumped = false;
         }
         
         private async void Slide()
         {
-            if (playerController.currentSubBehaviour == SubBehaviour.Jumping)
-            {
-                direction.y = gravity;
-            }
+            jumped = false;
+            direction.y = gravity;
             
             await Task.Delay(TimeSpan.FromSeconds(slideLength));
             playerController.SetPlayerSubBehaviour(SubBehaviour.Nothing);
-        }*/
+        }
     }
 }
