@@ -9,6 +9,8 @@ namespace Player
         [SerializeField] public PlayerInput playerInput;
         [SerializeField] public PlayerMovement playerMovement;
         [SerializeField] public PlayerCollision playerCollision;
+        [SerializeField] public PlayerStats playerStats;
+        [SerializeField] public PlayerDifficulty playerDifficulty;
         
         [SerializeField] public Behaviour currentBehaviour;
         [SerializeField] public SubBehaviour currentSubBehaviour;
@@ -19,6 +21,10 @@ namespace Player
         [SerializeField] public Lane currentLane;
         
         [NonSerialized] public CharacterController controller;
+
+        [SerializeField] public Animator animator;
+        private static readonly int IsRunning = Animator.StringToHash("isRunning");
+        private static readonly int IsDead = Animator.StringToHash("isDead");
 
         private void Awake()
         {
@@ -46,6 +52,14 @@ namespace Player
             if (Input.GetKeyDown(KeyCode.Alpha1) || playerInput.GetTapInput())
             {
                 SetPlayerBehaviour(Behaviour.Running);
+                animator.SetBool(IsRunning, true);
+            }
+
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+                Debug.Log("Dead");
+                animator.SetBool(IsDead, true);
+                SetPlayerBehaviour(Behaviour.Dead);
             }
         }
 

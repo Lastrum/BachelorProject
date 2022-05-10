@@ -20,8 +20,9 @@ namespace Player
         [SerializeField] private Transform groundCheck;
         [SerializeField] private LayerMask groundLayer;
         private bool isGrounded;
-        
-        [Header("Movement")]
+
+        [Header("Movement")] 
+        [SerializeField] public float maxForwardSpeed;
         [SerializeField] public float forwardSpeed;
         [SerializeField] public float jumpForce;
         [SerializeField] public float gravity;
@@ -172,8 +173,11 @@ namespace Player
             jumped = false;
             direction.y = gravity;
             
+            playerController.animator.SetBool("isSliding", true);
+            
             await Task.Delay(TimeSpan.FromSeconds(slideLength));
             playerController.SetPlayerSubBehaviour(SubBehaviour.Nothing);
+            playerController.animator.SetBool("isSliding", false);
         }
         
         private void UpdateText()
