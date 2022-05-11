@@ -1,14 +1,18 @@
 using System;
 using Manager;
+using Player;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using CameraType = Manager.CameraType;
 
 
 namespace Menus
 {
     public class MainMenu : MonoBehaviour
     {
+        [SerializeField] private PlayerController playerController;
+        
         [SerializeField] private Button playButton;
         [SerializeField] private Button shopButton;
         [SerializeField] private Button settingsButton;
@@ -22,24 +26,27 @@ namespace Menus
             statsButton.onClick.AddListener(Stats);
         }
 
-        private static void Play()
+        private void Play()
         {
             MenuManager.SwitchMenu(MenuType.GameHud);
+            playerController.playerCharacterSelector.SpawnCharacter();
         }
         
-        private static void Shop()
+        private void Shop()
         {
-            Debug.Log("shop");
+            MenuManager.SwitchMenu(MenuType.ShopMenu);
+            ShopManager.SwitchMenu(ShopMenuType.SubMenu);
         }
         
-        private static void Settings()
+        private void Settings()
         {
             Debug.Log("settings");
         }
         
-        private static void Stats()
+        private void Stats()
         {
             Debug.Log("stats");
         }
+        
     }
 }

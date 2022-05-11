@@ -1,16 +1,20 @@
 using System;
 using Manager;
+using ScriptableObjects;
 using UnityEngine;
 
 namespace Player
 {
     public class PlayerController : MonoBehaviour
     {
+        [SerializeField] public DataManager dataManager;
+        
         [SerializeField] public PlayerInput playerInput;
         [SerializeField] public PlayerMovement playerMovement;
         [SerializeField] public PlayerCollision playerCollision;
         [SerializeField] public PlayerStats playerStats;
         [SerializeField] public PlayerDifficulty playerDifficulty;
+        [SerializeField] public PlayerCharacterSelector playerCharacterSelector;
         
         [SerializeField] public Behaviour currentBehaviour;
         [SerializeField] public SubBehaviour currentSubBehaviour;

@@ -5,14 +5,17 @@ namespace Objects
 {
     public class Twist : MonoBehaviour
     {
+        [SerializeField] private bool twist;
+        [SerializeField] private bool hover;
+        
         [SerializeField] private float rotationSpeed = 40;
         [SerializeField] private float moveSpeed = 0.5f;
         private bool moveUp = true;
         
         private void Update()
         {
-            transform.Rotate(Vector3.up * (rotationSpeed * Time.deltaTime));
-            MoveUpAndDown();
+            if(twist) transform.Rotate(Vector3.up * (rotationSpeed * Time.deltaTime));
+            if(hover) MoveUpAndDown();
         }
 
         private void MoveUpAndDown()

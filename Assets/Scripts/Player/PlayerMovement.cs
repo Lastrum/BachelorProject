@@ -116,6 +116,7 @@ namespace Player
                     Lane.Right => Lane.Middle,
                     Lane.Middle => Lane.Left,
                     Lane.Left => Lane.Left,
+                    _ => Lane.Left
                 };
             }
             if (direction == Vector2.right)
@@ -125,6 +126,7 @@ namespace Player
                     Lane.Right => Lane.Right,
                     Lane.Middle => Lane.Right,
                     Lane.Left => Lane.Middle,
+                    _ => Lane.Right
                 };
             }
         }
