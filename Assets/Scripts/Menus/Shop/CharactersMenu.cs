@@ -47,6 +47,12 @@ namespace Menus.Shop
             UpdateCoinText();
         }
 
+        private void Update()
+        {
+            if(SwipeManager.swipeLeft) Next();
+            if(SwipeManager.swipeRight) Previous();
+        }
+
         private void LoadCharacter(int index)
         {
             character = Instantiate(dataManager.CharactersList[index].ShopPrefab, characterHolder.transform);
