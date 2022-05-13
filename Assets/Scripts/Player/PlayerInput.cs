@@ -6,8 +6,7 @@ namespace Player
     public class PlayerInput : MonoBehaviour
     {
         [SerializeField] private PlayerController playerController;
-
-
+        
         public bool GetTapInput()
         {
             return Input.GetKeyDown(KeyCode.Space) || SwipeManager.tap;

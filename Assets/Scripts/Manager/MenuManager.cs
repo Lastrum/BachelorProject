@@ -1,4 +1,3 @@
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,32 +19,32 @@ namespace Manager
     
     public class MenuManager : MonoBehaviour
     {
-        private static List<MenuController> menuControllersList;
-        private static MenuController lastActiveMenu;
+        private static List<MenuController> _menuControllersList;
+        private static MenuController _lastActiveMenu;
         public static MenuType currentMenu;
         private void Awake()
         {
-            menuControllersList = new List<MenuController>(GetComponentsInChildren<MenuController>());
+            _menuControllersList = new List<MenuController>(GetComponentsInChildren<MenuController>());
         }
 
         protected void Start()
         {
-            menuControllersList.ForEach(x => x.ToggleCanvas(false));
+            _menuControllersList.ForEach(x => x.ToggleCanvas(false));
             SwitchMenu(MenuType.MainMenu);
         }
 
         public static void SwitchMenu(MenuType type)
         {
-            if (lastActiveMenu != null)
+            if (_lastActiveMenu != null)
             {
-                lastActiveMenu.ToggleCanvas(false);
+                _lastActiveMenu.ToggleCanvas(false);
             }
             
-            MenuController desiredMenu = menuControllersList.Find(x => x.menuType == type);
+            MenuController desiredMenu = _menuControllersList.Find(x => x.menuType == type);
             if (desiredMenu != null)
             {
                 desiredMenu.ToggleCanvas(true);
-                lastActiveMenu = desiredMenu;
+                _lastActiveMenu = desiredMenu;
                 currentMenu = type;
             }
             else

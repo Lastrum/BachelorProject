@@ -19,7 +19,6 @@ namespace Manager
         
         private List<GameObject> activeTiles = new List<GameObject>();
         
-
         private void Start()
         {
 
