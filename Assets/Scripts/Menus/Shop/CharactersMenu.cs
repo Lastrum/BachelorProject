@@ -1,8 +1,10 @@
 using System;
 using Manager;
+using Misc;
 using Player;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using CameraType = Manager.CameraType;
 
@@ -10,7 +12,7 @@ namespace Menus.Shop
 {
     public class CharactersMenu : MonoBehaviour
     {
-        [SerializeField] private DataManager dataManager;
+        [SerializeField] public DataManager dataManager;
         
         [SerializeField] private Button backButton;
         
@@ -18,7 +20,7 @@ namespace Menus.Shop
         [SerializeField] private TextMeshProUGUI characterNameText;
         [SerializeField] private TextMeshProUGUI characterPriceText;
         [SerializeField] private GameObject priceHeader;
-
+        
         [Header("Arrow Buttons")] 
         [SerializeField] private Button previousButton;
         [SerializeField] private Button nextButton;
@@ -27,10 +29,13 @@ namespace Menus.Shop
         [SerializeField] private Button actionButton;
         [SerializeField] private TextMeshProUGUI actionText;
 
+        [Header("Slider Support")] 
+        [SerializeField] private Hover bigSliderSupport;
+
         [Header("Character Holder")] 
         [SerializeField] private GameObject characterHolder;
 
-        private int currentPosition = 0;
+        public int currentPosition = 0;
         private GameObject character;
         
         private void Awake()
@@ -49,12 +54,13 @@ namespace Menus.Shop
 
         private void Update()
         {
-            if(SwipeManager.swipeLeft) Next();
-            if(SwipeManager.swipeRight) Previous();
+            if(SwipeManager.swipeLeft && bigSliderSupport.isOver) Next();
+            if(SwipeManager.swipeRight && bigSliderSupport.isOver) Previous();
         }
 
-        private void LoadCharacter(int index)
+        public void LoadCharacter(int index)
         {
+            Destroy(character);
             character = Instantiate(dataManager.CharactersList[index].ShopPrefab, characterHolder.transform);
             characterNameText.text = dataManager.CharactersList[index].Name;
             if (!dataManager.CharactersList[index].IsUnlocked)
@@ -107,7 +113,6 @@ namespace Menus.Shop
 
         private void Previous()
         {
-            Destroy(character);
             if (currentPosition == 0)
             {
                 currentPosition = dataManager.CharactersList.Count-1;
@@ -121,7 +126,6 @@ namespace Menus.Shop
 
         private void Next()
         {
-            Destroy(character);
             if (currentPosition == dataManager.CharactersList.Count-1)
             {
                 currentPosition = 0;
@@ -137,5 +141,6 @@ namespace Menus.Shop
         {
             coinsText.text = dataManager.data.TotalCoins.ToString();
         }
+        
     }
 }

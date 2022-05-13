@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc558fc646c77924eb2c527665194eda, type: 3}
-  m_Name: Blue
+  m_Name: Temp1
   m_EditorClassIdentifier: 
-  name: Blue
-  description: Blue Dude
-  price: 1000
+  name: Temp 1
+  description: Red Dude
+  price: 5000
   isSelected: 0
   isUnlocked: 0
-  prefab: {fileID: 643872718415362496, guid: 9bf2c04fa19ded541883d152eaf1a482, type: 3}
-  shopPrefab: {fileID: 3144378578213597482, guid: 9f494da85e4e9be4bb00b8b42c15682e, type: 3}
-  shopImage: {fileID: 21300000, guid: d479084be61db1248a6cfe99ef784d80, type: 3}
+  prefab: {fileID: 1073178372431606905, guid: 3e5f4adbffa34054d860acde44597592, type: 3}
+  shopPrefab: {fileID: 7507110049427798937, guid: ee87f7d4d78760d45b34922f0c75b1a0, type: 3}
+  shopImage: {fileID: 21300000, guid: c9f2bcd39cf8c2549bf0abdd7a582477, type: 3}

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace ScriptableObjects
 {
@@ -25,5 +26,8 @@ namespace ScriptableObjects
         
         [SerializeField] private GameObject shopPrefab;
         public GameObject ShopPrefab { get => shopPrefab; set => shopPrefab = value; }
+
+        [SerializeField] private Sprite shopImage;
+        public Sprite ShopImage { get => shopImage; set => shopImage = value; }
     }
 }

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc558fc646c77924eb2c527665194eda, type: 3}
-  m_Name: Blue
+  m_Name: Temp2
   m_EditorClassIdentifier: 
-  name: Blue
+  name: Temp 2
   description: Blue Dude
-  price: 1000
+  price: 10000
   isSelected: 0
   isUnlocked: 0
   prefab: {fileID: 643872718415362496, guid: 9bf2c04fa19ded541883d152eaf1a482, type: 3}
