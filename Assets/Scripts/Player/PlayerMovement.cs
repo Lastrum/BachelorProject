@@ -21,7 +21,7 @@ namespace Player
         [SerializeField] private LayerMask groundLayer;
         private bool isGrounded;
 
-        [Header("Movement")] 
+        [Header("Movement")]
         [SerializeField] public float maxForwardSpeed;
         [SerializeField] public float forwardSpeed;
         [SerializeField] public float jumpForce;
@@ -29,9 +29,10 @@ namespace Player
         [SerializeField] public float slideLength;
         
         [NonSerialized] public Vector3 direction;
+        [NonSerialized] public float speed;
         private Vector3 targetPosition;
         private Vector3 velocity;
-
+        
         private bool jumped;
         private bool sliding;
 
@@ -43,7 +44,11 @@ namespace Player
 
         private void Update()
         {
-            if (playerController.currentBehaviour is PlayerController.Behaviour.Idle or PlayerController.Behaviour.Dead) return;
+            if (playerController.currentBehaviour is PlayerController.Behaviour.Idle) return;
+            if (playerController.currentBehaviour is PlayerController.Behaviour.Dead)
+            {
+                return;
+            }
             
             //Temp Remove later
             UpdateText();
@@ -90,7 +95,12 @@ namespace Player
         
         private void FixedUpdate()
         {
-            if (playerController.currentBehaviour is PlayerController.Behaviour.Idle or PlayerController.Behaviour.Dead) return;
+            if (playerController.currentBehaviour is PlayerController.Behaviour.Idle) return;
+            if (playerController.currentBehaviour is PlayerController.Behaviour.Dead)
+            {
+                playerController.controller.Move(direction * Time.deltaTime);
+                return;
+            };
             
             RaycastHit hit;
             // Does the ray intersect any objects excluding the player layer

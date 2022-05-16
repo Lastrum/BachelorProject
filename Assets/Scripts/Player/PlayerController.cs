@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 using Manager;
 using ScriptableObjects;
 using UnityEngine;
@@ -27,8 +28,8 @@ namespace Player
         [NonSerialized] public CharacterController controller;
 
         [SerializeField] public Animator animator;
-        private static readonly int IsRunning = Animator.StringToHash("isRunning");
-        private static readonly int IsDead = Animator.StringToHash("isDead");
+        public readonly int IsRunning = Animator.StringToHash("isRunning");
+        public readonly int IsDead = Animator.StringToHash("isDead");
 
         private void Awake()
         {
@@ -48,6 +49,15 @@ namespace Player
         {
             currentSubBehaviour = value;
         }
+
+
+        public async void Respawning()
+        {
+            animator.SetBool(IsDead, false);
+            animator.SetBool(IsRunning, true);
+            await Task.Delay(1500);
+            SetPlayerBehaviour(Behaviour.Running);
+        }
         
         private void Update()
         {
@@ -57,13 +67,6 @@ namespace Player
             {
                 SetPlayerBehaviour(Behaviour.Running);
                 animator.SetBool(IsRunning, true);
-            }
-
-            if (Input.GetKeyDown(KeyCode.D))
-            {
-                Debug.Log("Dead");
-                animator.SetBool(IsDead, true);
-                SetPlayerBehaviour(Behaviour.Dead);
             }
         }
 
