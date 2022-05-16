@@ -11,6 +11,9 @@ namespace ScriptableObjects
         [SerializeField] private int totalCoins;
         public int TotalCoins { get => totalCoins; set => totalCoins = value; }
 
+        [SerializeField] private int totalGems;
+        public int TotalGems { get => totalGems; set => totalGems = value; }
+        
         [SerializeField] private int level;
         public int Level { get => level; set => level = value; }
     }
