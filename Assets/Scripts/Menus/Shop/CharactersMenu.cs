@@ -46,8 +46,15 @@ namespace Menus.Shop
             nextButton.onClick.AddListener(Next);
         }
 
+        private void UpdateDelegates()
+        {
+            dataManager.data.UpdateCoinsDelegate += UpdateCoinText;
+        }
+        
         private void Start()
         {
+            UpdateDelegates();
+            
             LoadCharacter(currentPosition);
             UpdateCoinText();
         }
@@ -95,7 +102,11 @@ namespace Menus.Shop
             if (dataManager.CharactersList[currentPosition].IsUnlocked && !dataManager.CharactersList[currentPosition].IsSelected)
             {
                 dataManager.SelectedCharacter.IsSelected = false;
+                PlayerPrefs.SetInt(dataManager.SelectedCharacter.Name + dataManager.selectedString, 0);
+                
                 dataManager.CharactersList[currentPosition].IsSelected = true;
+                PlayerPrefs.SetInt(dataManager.CharactersList[currentPosition].Name + dataManager.selectedString, 1);
+                
                 dataManager.SelectedCharacter = dataManager.CharactersList[currentPosition];
                 actionText.text = "Selected";
             }
@@ -105,6 +116,8 @@ namespace Menus.Shop
                 dataManager.data.TotalCoins -= dataManager.CharactersList[currentPosition].Price;
                 UpdateCoinText();
                 dataManager.CharactersList[currentPosition].IsUnlocked = true;
+                PlayerPrefs.SetInt(dataManager.CharactersList[currentPosition].Name + dataManager.unlockedString, 1);
+                PlayerPrefs.SetInt("TotalCoins", dataManager.data.TotalCoins);
                 priceHeader.SetActive(false);
                 actionText.text = "Select";
             }

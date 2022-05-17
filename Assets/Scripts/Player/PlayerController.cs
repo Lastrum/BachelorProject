@@ -49,8 +49,7 @@ namespace Player
         {
             currentSubBehaviour = value;
         }
-
-
+        
         public async void Respawning()
         {
             animator.SetBool(IsDead, false);

@@ -26,7 +26,6 @@ namespace Player
                 playerController.playerMovement.direction.z = 0;
                 playerController.playerMovement.forwardSpeed = 0;
                 
-                //MenuManager.SwitchMenu(MenuType.DeathMenu);
             }
         }
     }

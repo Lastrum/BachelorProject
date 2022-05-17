@@ -14,7 +14,7 @@ namespace Player
         public float score;
         public float multiplier;
 
-        private static int coins;
+        public static int coins;
         
         private float distance;
 
@@ -33,8 +33,8 @@ namespace Player
             UpdateCoinsDelegate.Invoke();
             
         }
-
-        private void UpdateCoinsText()
+        
+        public void UpdateCoinsText()
         {
             coinText.text = $"Coins: {coins}";
         }

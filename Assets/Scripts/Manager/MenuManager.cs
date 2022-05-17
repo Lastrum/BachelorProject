@@ -12,6 +12,7 @@ namespace Manager
         DeathMenu,
         GameHud,
         ShopMenu,
+        LevelMenu,
         SettingsMenu,
         StatsMenu,
         LoadingScreen

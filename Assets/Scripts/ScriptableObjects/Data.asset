@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Data
   m_EditorClassIdentifier: 
   playerName: 
-  totalCoins: 5000
+  totalCoins: 0
+  totalGems: 0
   level: 0

@@ -10,13 +10,15 @@ namespace Menus
     public class DeathMenu : MonoBehaviour
     {
         [SerializeField] private PlayerController playerController;
+        [SerializeField] private LevelMenu levelMenu;
+        
         [SerializeField] private Button respawnButton;
-        [SerializeField] private Button menuButton;
+        [SerializeField] private Button completeRun;
 
         private void Awake()
         {
             respawnButton.onClick.AddListener(RespawnButton);
-            menuButton.onClick.AddListener(BackToMenuButton);
+            completeRun.onClick.AddListener(CompleteRunButton);
         }
 
         public void RespawnButton()
@@ -26,9 +28,10 @@ namespace Menus
             playerController.Respawning();
         }
 
-        public void BackToMenuButton()
+        public void CompleteRunButton()
         {
-            SceneManager.LoadScene(0);
+            MenuManager.SwitchMenu(MenuType.LevelMenu);
+            levelMenu.UpdateCoins();
         }
     }
 }

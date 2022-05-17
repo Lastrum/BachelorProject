@@ -17,7 +17,7 @@ namespace Menus.Shop
             charactersButton.onClick.AddListener(CharactersMenu);
             upgradesButton.onClick.AddListener(UpgradesMenu);
         }
-
+        
         private static void BackToMainMenu()
         {
             MenuManager.SwitchMenu(MenuType.MainMenu);
