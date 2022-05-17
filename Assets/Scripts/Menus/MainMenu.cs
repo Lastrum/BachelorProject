@@ -30,6 +30,8 @@ namespace Menus
         {
             MenuManager.SwitchMenu(MenuType.GameHud);
             playerController.playerCharacterSelector.SpawnCharacter();
+            PlayerStats.coins = 0;
+            playerController.playerStats.UpdateCoinsText();
         }
         
         private void Shop()
@@ -40,7 +42,7 @@ namespace Menus
         
         private void Settings()
         {
-            Debug.Log("settings");
+            MenuManager.SwitchMenu(MenuType.SettingsMenu);
         }
         
         private void Stats()

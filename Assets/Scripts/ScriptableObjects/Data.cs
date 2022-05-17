@@ -8,8 +8,13 @@ namespace ScriptableObjects
         [SerializeField] private string playerName;
         public string PlayerName { get => playerName; set => playerName = value; }
 
+        /// <summary>
+        /// Coins
+        /// </summary>
+        public delegate void UpdateCoins();
+        public UpdateCoins UpdateCoinsDelegate;
         [SerializeField] private int totalCoins;
-        public int TotalCoins { get => totalCoins; set => totalCoins = value; }
+        public int TotalCoins { get => totalCoins; set { totalCoins = value; UpdateCoinsDelegate?.Invoke(); } }
 
         [SerializeField] private int totalGems;
         public int TotalGems { get => totalGems; set => totalGems = value; }

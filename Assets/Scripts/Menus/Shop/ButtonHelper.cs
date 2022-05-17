@@ -25,6 +25,7 @@ namespace Menus.Shop
         private void Load()
         {
            charactersMenu.LoadCharacter(position);
+           charactersMenu.currentPosition = position;
         }
         
     }
