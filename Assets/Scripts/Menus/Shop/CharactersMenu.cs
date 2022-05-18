@@ -117,7 +117,6 @@ namespace Menus.Shop
                 UpdateCoinText();
                 dataManager.CharactersList[currentPosition].IsUnlocked = true;
                 PlayerPrefs.SetInt(dataManager.CharactersList[currentPosition].Name + dataManager.unlockedString, 1);
-                PlayerPrefs.SetInt("TotalCoins", dataManager.data.TotalCoins);
                 priceHeader.SetActive(false);
                 actionText.text = "Select";
             }

@@ -14,12 +14,43 @@ namespace ScriptableObjects
         public delegate void UpdateCoins();
         public UpdateCoins UpdateCoinsDelegate;
         [SerializeField] private int totalCoins;
-        public int TotalCoins { get => totalCoins; set { totalCoins = value; UpdateCoinsDelegate?.Invoke(); } }
-
+        public int TotalCoins { get => totalCoins; set { totalCoins = value; UpdateCoinsDelegate?.Invoke(); PlayerPrefs.SetInt("TotalCoins", totalCoins); }}
+        
+        /// <summary>
+        /// Gems
+        /// </summary>
+        public delegate void UpdateGems();
+        public UpdateGems UpdateGemsDelegate;
+        
         [SerializeField] private int totalGems;
-        public int TotalGems { get => totalGems; set => totalGems = value; }
+        public int TotalGems { get => totalGems; set { totalGems = value; UpdateGemsDelegate?.Invoke(); PlayerPrefs.SetInt("TotalGems", totalGems); } }
+        
+        /// <summary>
+        /// Level 
+        /// </summary>
+        public delegate void UpdateLevel();
+        public UpdateLevel updateLevelDelegate;
         
         [SerializeField] private int level;
-        public int Level { get => level; set => level = value; }
+        public int Level { get => level; set { level = value; updateLevelDelegate?.Invoke(); PlayerPrefs.SetInt("Level", level); } }
+        
+        /// <summary>
+        /// currentXP
+        /// </summary>
+        public delegate void UpdateCurrentXP();
+        public UpdateCurrentXP updateCurrentXPDelegate;
+        
+        [SerializeField] private int currentXP;
+        public int CurrentXP { get => currentXP; set { currentXP = value; updateCurrentXPDelegate?.Invoke(); PlayerPrefs.SetInt("CurrentXP", currentXP);} }
+        
+        /// <summary>
+        /// TotalXP
+        /// </summary>
+        public delegate void UpdateTotalXP();
+        public UpdateTotalXP updateTotalXPDelegate;
+        
+        [SerializeField] private int totalXP;
+        public int TotalXP { get => totalXP; set { totalXP = value; updateTotalXPDelegate?.Invoke(); PlayerPrefs.SetInt("TotalXP", totalXP); } }
+        
     }
 }

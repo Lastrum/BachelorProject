@@ -31,7 +31,6 @@ namespace Menus
         private void GiveCoins()
         {
             dataManager.data.TotalCoins += 5000;
-            PlayerPrefs.SetInt("TotalCoins", dataManager.data.TotalCoins);
         }
 
         private void ResetData()
