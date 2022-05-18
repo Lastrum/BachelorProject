@@ -31,7 +31,6 @@ namespace Player
         {
             coins += value;
             UpdateCoinsDelegate.Invoke();
-            
         }
         
         public void UpdateCoinsText()

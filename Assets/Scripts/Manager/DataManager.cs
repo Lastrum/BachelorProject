@@ -91,10 +91,13 @@ namespace Manager
         public void UpdateData()
         {
             data.PlayerName = PlayerPrefs.GetString("PlayerName");
-            data.Level = PlayerPrefs.GetInt("Level");
             data.TotalCoins = PlayerPrefs.GetInt("TotalCoins");
             data.TotalGems = PlayerPrefs.GetInt("TotalGems");
 
+            data.Level = PlayerPrefs.GetInt("Level");
+            data.CurrentXP = PlayerPrefs.GetInt("CurrentXP");
+            data.TotalXP = PlayerPrefs.GetInt("TotalXP");
+            
             IsUnlockedCharacterList();
             IsSelectedCharacterList();
             
@@ -103,9 +106,12 @@ namespace Manager
         public void ResetData()
         {
             data.PlayerName = "";
-            data.Level = 1;
             data.TotalCoins = 0;
             data.TotalGems = 0;
+            
+            data.Level = 1;
+            data.CurrentXP = 0;
+            data.TotalXP = 250;
             
             SetIsUnlockedCharacterList();
             SetSelectedCharacterList();
