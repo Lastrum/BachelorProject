@@ -11,6 +11,7 @@ namespace Manager
     public class DataManager : MonoBehaviour
     {
         [SerializeField] public Data data;
+        [SerializeField] public MissionManager missionManager;
         [SerializeField] private List<Characters> charactersList;
         public List<Characters> CharactersList => charactersList;
 
@@ -100,6 +101,8 @@ namespace Manager
             
             IsUnlockedCharacterList();
             IsSelectedCharacterList();
+            
+            missionManager.LoadCurrentMission();
             
         }
 

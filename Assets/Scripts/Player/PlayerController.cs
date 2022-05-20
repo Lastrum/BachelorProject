@@ -9,6 +9,7 @@ namespace Player
     public class PlayerController : MonoBehaviour
     {
         [SerializeField] public DataManager dataManager;
+        [SerializeField] public MissionManager missionManager;
         
         [SerializeField] public PlayerInput playerInput;
         [SerializeField] public PlayerMovement playerMovement;

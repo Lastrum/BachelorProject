@@ -15,7 +15,8 @@ namespace Manager
         LevelMenu,
         SettingsMenu,
         StatsMenu,
-        LoadingScreen
+        LoadingScreen,
+        MissionsMenu
     }
     
     public class MenuManager : MonoBehaviour
