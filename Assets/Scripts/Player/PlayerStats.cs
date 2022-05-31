@@ -10,6 +10,8 @@ namespace Player
         [SerializeField] public PlayerController playerController;
         [SerializeField] public TextMeshProUGUI scoreText;
         [SerializeField] public TextMeshProUGUI coinText;
+
+        private static PlayerController staticPlayerController;
         
         public float score;
         public float multiplier;
@@ -23,6 +25,8 @@ namespace Player
         
         private void Start()
         {
+            staticPlayerController = playerController;
+            
             UpdateCoinsDelegate += UpdateCoinsText;
             UpdateCoinsText();
         }
@@ -31,11 +35,17 @@ namespace Player
         {
             coins += value;
             UpdateCoinsDelegate.Invoke();
+            MissionChecker(value);
         }
         
         public void UpdateCoinsText()
         {
             coinText.text = $"Coins: {coins}";
+        }
+
+        private static void MissionChecker(int value)
+        {
+            staticPlayerController.missionManager.CheckCoinMission(value);
         }
         
         private void Update()
@@ -43,6 +53,7 @@ namespace Player
             if (playerController.currentBehaviour != PlayerController.Behaviour.Running) return;
             
             score = transform.position.z * multiplier;
+            score = Mathf.Round(score);
             scoreText.text = $"Score: {score}";
         }
         

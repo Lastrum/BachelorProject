@@ -16,8 +16,10 @@ namespace Player
                 playerController.animator.SetBool(playerController.IsDead, true);
                 playerController.SetPlayerBehaviour(PlayerController.Behaviour.Dead);
                 playerController.SetPlayerSubBehaviour(PlayerController.SubBehaviour.Nothing);
-
+                
                 MenuManager.SwitchMenu(MenuType.DeathMenu);
+                
+                playerController.missionManager.CheckDistanceMission(playerController.playerStats.score);
                 
                 playerController.playerMovement.speed = playerController.playerMovement.forwardSpeed;
                 

@@ -14,6 +14,7 @@ namespace Menus
         [SerializeField] private PlayerController playerController;
         
         [SerializeField] private Button playButton;
+        [SerializeField] private Button missionButton;
         [SerializeField] private Button shopButton;
         [SerializeField] private Button settingsButton;
         [SerializeField] private Button statsButton;
@@ -21,6 +22,7 @@ namespace Menus
         private void Awake()
         {
             playButton.onClick.AddListener(Play);
+            missionButton.onClick.AddListener(Mission);
             shopButton.onClick.AddListener(Shop);
             settingsButton.onClick.AddListener(Settings);
             statsButton.onClick.AddListener(Stats);
@@ -32,6 +34,11 @@ namespace Menus
             playerController.playerCharacterSelector.SpawnCharacter();
             PlayerStats.coins = 0;
             playerController.playerStats.UpdateCoinsText();
+        }
+
+        private void Mission()
+        {
+            MenuManager.SwitchMenu(MenuType.MissionsMenu);
         }
         
         private void Shop()

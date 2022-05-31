@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d39b1d2b9bdbd9c4198ea2dba31d5fa0, type: 3}
+  m_Name: Distance
+  m_EditorClassIdentifier: 
+  name: Run Distance
+  isSelected: 0
+  hasMission: 1
+  tag: Distance
+  description: Run {Replace} Meters
+  task: 100
+  progress: 0
+  reward: 100

@@ -30,6 +30,12 @@ namespace Menus
             dataManager.data.TotalCoins += PlayerStats.coins;
             PlayerPrefs.SetInt("TotalCoins", dataManager.data.TotalCoins);
         }
+
+
+        public void UpdateXpText(string value)
+        {
+            xpText.text = value;
+        }
         
         public void BackToMenuButton()
         {
