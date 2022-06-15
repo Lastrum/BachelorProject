@@ -143,7 +143,6 @@ namespace Player
 
         private void HandleLane()
         {
-            //Calculate where we should be in the future
             targetPosition = transform.position.z * transform.forward + transform.position.y * transform.up;
             
             switch (playerController.currentLane)
