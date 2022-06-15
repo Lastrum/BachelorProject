@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44338402, g: 0.49243402, b: 0.57182384, a: 1}
+  m_IndirectSpecularColor: {r: 0.44338387, g: 0.49243373, b: 0.5718233, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 0189c7978e7bae34793262c4bf75b012, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -4338,12 +4338,12 @@ MonoBehaviour:
   tilePrefabs:
   - {fileID: 8503135696916366522, guid: 3af14e9d57ca4854998523a864e885e2, type: 3}
   - {fileID: 7835028367840015468, guid: 4808efd17ac3c544e8aa4093f3d37d48, type: 3}
-  - {fileID: 6927947343420786856, guid: 83fa6d6e84c49594ea28f0329f499dac, type: 3}
+  - {fileID: 7835028367840015468, guid: 83fa6d6e84c49594ea28f0329f499dac, type: 3}
   - {fileID: 3906312007388190100, guid: 4d2b89ca8814317429fcf4e185ddbb89, type: 3}
   - {fileID: 3906312007388190100, guid: 2be49ce191fcaaf419b847eb5009a16d, type: 3}
   - {fileID: 3906312007388190100, guid: f98fdce32bc60da49bfe375437dcc82f, type: 3}
   zSpawn: 0
-  tileLength: 48
+  tileLength: 30
   maxNumOfTiles: 5
   playerTransform: {fileID: 1559102776}
   defaultSpawn: 0
@@ -8750,7 +8750,7 @@ MonoBehaviour:
   currentBehaviour: 0
   currentSubBehaviour: 0
   transitionSpeed: 80
-  laneDistance: 5
+  laneDistance: 3
   currentLane: 0
   animator: {fileID: 0}
 --- !u!143 &1559102778
