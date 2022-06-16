@@ -9,6 +9,7 @@ namespace Objects
 
         private void OnTriggerEnter(Collider other)
         {
+            //Player
             if (other.CompareTag("Player"))
             {
                 PlayerStats.AddCoins(coinWorth);

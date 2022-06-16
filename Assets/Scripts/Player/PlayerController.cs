@@ -10,6 +10,7 @@ namespace Player
     {
         [SerializeField] public DataManager dataManager;
         [SerializeField] public MissionManager missionManager;
+        [SerializeField] public PowerUpManager powerUpManager;
         
         [SerializeField] public PlayerInput playerInput;
         [SerializeField] public PlayerMovement playerMovement;
@@ -57,6 +58,7 @@ namespace Player
             animator.SetBool(IsRunning, true);
             await Task.Delay(1500);
             SetPlayerBehaviour(Behaviour.Running);
+            powerUpManager.GodMode(3000);
         }
         
         private void Update()

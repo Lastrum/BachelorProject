@@ -307,7 +307,7 @@ GameObject:
   - component: {fileID: 8250626133455124164}
   m_Layer: 0
   m_Name: Tile (6)
-  m_TagString: Untagged
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -341,7 +341,7 @@ GameObject:
   - component: {fileID: 2989049108559230844}
   m_Layer: 0
   m_Name: Tile (3)
-  m_TagString: Untagged
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -894,7 +894,7 @@ GameObject:
   - component: {fileID: 2098351908329327022}
   m_Layer: 0
   m_Name: Tile (4)
-  m_TagString: Untagged
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1240,7 +1240,7 @@ GameObject:
   - component: {fileID: 6949015167103223002}
   m_Layer: 0
   m_Name: Tile (5)
-  m_TagString: Untagged
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2000,7 +2000,7 @@ GameObject:
   - component: {fileID: 5366081801586990745}
   m_Layer: 0
   m_Name: Tile (2)
-  m_TagString: Untagged
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2458,7 +2458,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1640771308685042, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_TagString
-      value: Obstacle
+      value: Water
       objectReference: {fileID: 0}
     - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_RootOrder
@@ -2746,7 +2746,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1640771308685042, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_TagString
-      value: Obstacle
+      value: Water
       objectReference: {fileID: 0}
     - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_RootOrder
@@ -2888,25 +2888,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Water 01
       objectReference: {fileID: 0}
-    - target: {fileID: 1640771308685042, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
-      propertyPath: m_TagString
-      value: Obstacle
-      objectReference: {fileID: 0}
     - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2947,10 +2931,6 @@ PrefabInstance:
     - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
@@ -3116,7 +3096,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1640771308685042, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_TagString
-      value: Obstacle
+      value: Water
       objectReference: {fileID: 0}
     - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_RootOrder
@@ -3198,7 +3178,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1640771308685042, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_TagString
-      value: Obstacle
+      value: Water
       objectReference: {fileID: 0}
     - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_RootOrder
@@ -3278,25 +3258,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Water 01
       objectReference: {fileID: 0}
-    - target: {fileID: 1640771308685042, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
-      propertyPath: m_TagString
-      value: Obstacle
-      objectReference: {fileID: 0}
     - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3337,10 +3301,6 @@ PrefabInstance:
     - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
@@ -3486,7 +3446,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1640771308685042, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_TagString
-      value: Obstacle
+      value: Water
       objectReference: {fileID: 0}
     - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_RootOrder
@@ -3568,7 +3528,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1640771308685042, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_TagString
-      value: Obstacle
+      value: Water
       objectReference: {fileID: 0}
     - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_RootOrder
@@ -3980,7 +3940,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1640771308685042, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_TagString
-      value: Obstacle
+      value: Water
       objectReference: {fileID: 0}
     - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_RootOrder
@@ -4060,25 +4020,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Water 01
       objectReference: {fileID: 0}
-    - target: {fileID: 1640771308685042, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
-      propertyPath: m_TagString
-      value: Obstacle
-      objectReference: {fileID: 0}
     - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4120,10 +4064,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
 --- !u!4 &5821079794236977819 stripped
@@ -4144,7 +4084,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1640771308685042, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_TagString
-      value: Obstacle
+      value: Water
       objectReference: {fileID: 0}
     - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_RootOrder
@@ -4370,7 +4310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1640771308685042, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_TagString
-      value: Obstacle
+      value: Water
       objectReference: {fileID: 0}
     - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_RootOrder
@@ -4452,7 +4392,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1640771308685042, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_TagString
-      value: Obstacle
+      value: Water
       objectReference: {fileID: 0}
     - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_RootOrder
@@ -4534,7 +4474,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1640771308685042, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_TagString
-      value: Obstacle
+      value: Water
       objectReference: {fileID: 0}
     - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_RootOrder
@@ -4616,7 +4556,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1640771308685042, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_TagString
-      value: Obstacle
+      value: Water
       objectReference: {fileID: 0}
     - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_RootOrder
@@ -5088,25 +5028,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Water 01
       objectReference: {fileID: 0}
-    - target: {fileID: 1640771308685042, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
-      propertyPath: m_TagString
-      value: Obstacle
-      objectReference: {fileID: 0}
     - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5147,10 +5071,6 @@ PrefabInstance:
     - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
@@ -5254,7 +5174,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1640771308685042, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_TagString
-      value: Obstacle
+      value: Water
       objectReference: {fileID: 0}
     - target: {fileID: 4115408997890500, guid: ff78edb367a079b4a8f8ae2d128c581f, type: 3}
       propertyPath: m_RootOrder
