@@ -9,6 +9,7 @@ namespace Player
     public class PlayerController : MonoBehaviour
     {
         [SerializeField] public DataManager dataManager;
+        [SerializeField] public AudioManager audioManager;
         [SerializeField] public MissionManager missionManager;
         [SerializeField] public PowerUpManager powerUpManager;
         
@@ -21,6 +22,7 @@ namespace Player
         
         [SerializeField] public Behaviour currentBehaviour;
         [SerializeField] public SubBehaviour currentSubBehaviour;
+        
         
         [Header("Lane")]
         [SerializeField] public int transitionSpeed;

@@ -52,6 +52,7 @@ namespace Player
             //Power Ups
             if (other.CompareTag("PowerUp"))
             {
+                playerController.audioManager.puwerUpAudio.Play();
                 PowerUp p = other.GetComponent<PowerUp>();
                 switch (p.power)
                 {
@@ -65,6 +66,12 @@ namespace Player
                         playerController.powerUpManager.GodMode(playerController.powerUpManager.godModeLength);
                         break;
                 }
+            }
+            
+            //Coins
+            if (other.CompareTag("Coin"))
+            {
+                playerController.audioManager.coinAudio.Play();
             }
         }
     }

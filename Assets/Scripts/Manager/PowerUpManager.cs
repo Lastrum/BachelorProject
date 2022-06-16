@@ -16,7 +16,6 @@ namespace Manager
     public class PowerUpManager : MonoBehaviour
     {
         [SerializeField] private PlayerController playerController;
-        [SerializeField] private GameObject aura;
 
         private MeshRenderer auraMesh;
         private bool flicker;
@@ -25,22 +24,25 @@ namespace Manager
         [Header("Jumping")] 
         public int jumpLength;
         public Material jumpMaterial;
+        [SerializeField] private GameObject jumpPrefab;
 
         [Header("Coin Magnet")]
         public bool magnetMode;
         public int magnetLength;
         public Material magnetMaterial;
         public GameObject magnet;
+        [SerializeField] private GameObject magnetPrefab;
         
         [Header("God Mode")] 
         public bool godMode;
         public int godModeLength;
         public Material godModeMaterial;
+        [SerializeField] private GameObject godPrefab;
         
         private void Awake()
         {
-            auraMesh = aura.GetComponent<MeshRenderer>();
-            aura.SetActive(false);
+            //auraMesh = aura.GetComponent<MeshRenderer>();
+            //aura.SetActive(false);
             flicker = false;
         }
 
@@ -58,57 +60,42 @@ namespace Manager
             {
                 GodMode(godModeLength);
             }
-            
-            if (flicker)
-            { 
-                Color color = new Color();
-                color = auraMesh.material.color;
-                color.a -= value * Time.deltaTime;
-                auraMesh.material.SetColor("_Color", color);
-            }
         }
 
         public async void Jumping(float speed)
         {
-            float j = playerController.playerMovement.jumpForce;
-            playerController.playerMovement.jumpForce *= 2f;
-            aura.SetActive(true);
-            ChangeColour(jumpMaterial, speed);
+            CreateAura(jumpPrefab, speed);
+            playerController.playerMovement.jumpForce = playerController.playerMovement.jumpForcePower;
             await Task.Delay((int)speed);
-            aura.SetActive(false);
-            flicker = false;
-            playerController.playerMovement.jumpForce = j;
+            playerController.playerMovement.jumpForce = playerController.playerMovement.jumpForceDefault;
         }
         
         public async void MagnetMode(float speed)
         {
+            CreateAura(magnetPrefab, speed);
             magnetMode = true;
-            aura.SetActive(true);
             magnet.SetActive(true);
-            ChangeColour(magnetMaterial, speed);
             await Task.Delay((int)speed);
-            aura.SetActive(false);
             magnet.SetActive(false);
             magnetMode = false;
-            flicker = false;
         }
         
         public async void GodMode(float speed)
         {
+            CreateAura(godPrefab, speed);
             godMode = true;
-            aura.SetActive(true);
-            ChangeColour(godModeMaterial, speed);
             await Task.Delay((int)speed);
-            aura.SetActive(false);
             godMode = false;
-            flicker = false;
         }
+        
 
-        private async void ChangeColour(Material m, float speed)
+        private void CreateAura(GameObject prefab, float speed)
         {
-           auraMesh.material = m;
-           await Task.Delay((int)speed-2000);
-           flicker = true;
+            GameObject aura = Instantiate(prefab, playerController.transform, true);
+            aura.transform.position = playerController.transform.position;
+            
+            
+            Destroy(aura, speed/1000);
         }
     }
 }
