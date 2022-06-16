@@ -8852,7 +8852,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   maxForwardSpeed: 20
-  forwardSpeed: 5
+  forwardSpeed: 7.5
   jumpForce: 10
   gravity: -20
   slideLength: 1.5

@@ -62,7 +62,7 @@ namespace Menus
                 canvas.interactable = false;
                 canvas.blocksRaycasts = false;
             }
-            Debug.Log("??? " + canvas.name + " " + value);
+     
         }
         
         private void CreateMission()
@@ -77,7 +77,7 @@ namespace Menus
             name.text = $"Name: {missionManager.currentMission.Name}";
             description.text = $"Description: {missionManager.currentMission.Description.Replace("{Replace}", missionManager.currentMission.Task.ToString())}";
             task.text = $"Task: {missionManager.currentMission.Progress.ToString()}/ {missionManager.currentMission.Task.ToString()}";
-            reward.text = $"Reward: {missionManager.currentMission.Reward}";
+            reward.text = $"Reward: {missionManager.currentMission.Reward} xp";
         }
         
         private void Back()

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Data
   m_EditorClassIdentifier: 
   playerName: 
-  totalCoins: 9000
+  totalCoins: 28
   totalGems: 0
   level: 1
   currentXP: 0
