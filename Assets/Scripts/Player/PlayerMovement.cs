@@ -24,7 +24,9 @@ namespace Player
         [Header("Movement")]
         [SerializeField] public float maxForwardSpeed;
         [SerializeField] public float forwardSpeed;
+        [SerializeField] public float jumpForceDefault;
         [SerializeField] public float jumpForce;
+        [SerializeField] public float jumpForcePower;
         [SerializeField] public float gravity;
         [SerializeField] public float slideLength;
         

@@ -9,7 +9,9 @@ namespace Player
     public class PlayerController : MonoBehaviour
     {
         [SerializeField] public DataManager dataManager;
+        [SerializeField] public AudioManager audioManager;
         [SerializeField] public MissionManager missionManager;
+        [SerializeField] public PowerUpManager powerUpManager;
         
         [SerializeField] public PlayerInput playerInput;
         [SerializeField] public PlayerMovement playerMovement;
@@ -20,6 +22,7 @@ namespace Player
         
         [SerializeField] public Behaviour currentBehaviour;
         [SerializeField] public SubBehaviour currentSubBehaviour;
+        
         
         [Header("Lane")]
         [SerializeField] public int transitionSpeed;
@@ -57,6 +60,7 @@ namespace Player
             animator.SetBool(IsRunning, true);
             await Task.Delay(1500);
             SetPlayerBehaviour(Behaviour.Running);
+            powerUpManager.GodMode(3000);
         }
         
         private void Update()

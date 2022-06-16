@@ -9,6 +9,10 @@ TagManager:
   - Character
   - Icon
   - Shop Character
+  - PowerUp
+  - Water
+  - Magnet
+  - Coin
   layers:
   - Default
   - TransparentFX

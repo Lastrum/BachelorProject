@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7452362845447363950}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -241,9 +241,9 @@ GameObject:
   - component: {fileID: 3855954998673555275}
   - component: {fileID: 2326308988083573077}
   - component: {fileID: 2737762906636300616}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01 (2)
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -321,8 +321,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 261155887042071556}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -352,9 +352,9 @@ GameObject:
   - component: {fileID: 8665175485262353318}
   - component: {fileID: 2220730997767031982}
   - component: {fileID: 7510997056163734469}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01 (1)
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -432,8 +432,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 289862897595691275}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -657,9 +657,9 @@ GameObject:
   - component: {fileID: 493729685594010791}
   - component: {fileID: 461191165144718337}
   - component: {fileID: 8820343947649170437}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01 (2)
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -737,8 +737,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 471466099286182497}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -764,9 +764,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4459148318514645737}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (2)
-  m_TagString: Untagged
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -798,9 +798,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1707563763774537993}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (10)
-  m_TagString: Untagged
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1030,9 +1030,9 @@ GameObject:
   - component: {fileID: 5255666423939139544}
   - component: {fileID: 227460777545069493}
   - component: {fileID: 735877899037930069}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1110,8 +1110,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 755207542251625283}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -1335,9 +1335,9 @@ GameObject:
   - component: {fileID: 2217664686032102711}
   - component: {fileID: 2196301053451144593}
   - component: {fileID: 7094443569538100629}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1415,8 +1415,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2204042712539061233}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -1446,9 +1446,9 @@ GameObject:
   - component: {fileID: 3664220584574886446}
   - component: {fileID: 7768066754286911991}
   - component: {fileID: 2668100883374570178}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1526,8 +1526,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2250725388033067413}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -1747,7 +1747,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1387772506262774194}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1785,9 +1785,9 @@ GameObject:
   - component: {fileID: 2320643877255082770}
   - component: {fileID: 2344399772693289908}
   - component: {fileID: 6667203014714538928}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01 (2)
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1865,8 +1865,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2334124838539202004}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -1892,7 +1892,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 412347382404911183}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1930,9 +1930,9 @@ GameObject:
   - component: {fileID: 7194838211002647900}
   - component: {fileID: 8680815476334290812}
   - component: {fileID: 7022472872799202824}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01 (1)
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2010,8 +2010,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2418000543391010033}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -2138,9 +2138,9 @@ GameObject:
   - component: {fileID: 2492713854321210812}
   - component: {fileID: 2462211603871309082}
   - component: {fileID: 6784068750628027678}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2218,8 +2218,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2505982059985521530}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -2346,9 +2346,9 @@ GameObject:
   - component: {fileID: 2527201605029477333}
   - component: {fileID: 2570994756432597875}
   - component: {fileID: 6890596381855347575}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01 (2)
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2426,8 +2426,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2540737293671908627}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -2457,9 +2457,9 @@ GameObject:
   - component: {fileID: 2528055545457837104}
   - component: {fileID: 2569615283801173142}
   - component: {fileID: 6892558574186712210}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01 (1)
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2537,8 +2537,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2541607426114353910}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -2568,9 +2568,9 @@ GameObject:
   - component: {fileID: 2770573821105527260}
   - component: {fileID: 2796559814525153658}
   - component: {fileID: 6539563834921554302}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01 (2)
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2648,8 +2648,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2748287953511851802}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -2679,9 +2679,9 @@ GameObject:
   - component: {fileID: 2812834271909177115}
   - component: {fileID: 2861298406472175549}
   - component: {fileID: 6609891450613182393}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2759,8 +2759,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2835542344311380445}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -2786,7 +2786,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1089105882611135299}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2824,9 +2824,9 @@ GameObject:
   - component: {fileID: 7827339013119522058}
   - component: {fileID: 613604177235710353}
   - component: {fileID: 7368119321936726875}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01 (1)
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2904,8 +2904,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2926180607644128452}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -2935,9 +2935,9 @@ GameObject:
   - component: {fileID: 313724884640120028}
   - component: {fileID: 2420714203180702098}
   - component: {fileID: 6324945062073148541}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01 (2)
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3015,8 +3015,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2954976251082079126}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -3337,9 +3337,9 @@ GameObject:
   - component: {fileID: 3620346785297037058}
   - component: {fileID: 3639577396757258148}
   - component: {fileID: 5659954523160657824}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01 (1)
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3417,8 +3417,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3634089731939731908}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -3444,7 +3444,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 696511313767775073}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3672,7 +3672,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3599586052075904045}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prefab 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3704,7 +3704,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3930974668252103254}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3745,9 +3745,9 @@ GameObject:
   - component: {fileID: 6254128088731955062}
   - component: {fileID: 3911194700299608966}
   - component: {fileID: 682782210914706955}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3825,8 +3825,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4188795960202090466}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -3949,7 +3949,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8540967108785546704}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4084,9 +4084,9 @@ GameObject:
   - component: {fileID: 2662676354460153866}
   - component: {fileID: 1021749381611679832}
   - component: {fileID: 1579255134831751986}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01 (2)
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4164,8 +4164,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4601984086859361573}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -4191,7 +4191,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5075127160959666269}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4348,9 +4348,9 @@ GameObject:
   - component: {fileID: 5323540354770248998}
   - component: {fileID: 5286502333534113152}
   - component: {fileID: 3842484321148071300}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4428,8 +4428,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5310285867279670240}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -4455,9 +4455,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1726542531830878378}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (5)
-  m_TagString: Untagged
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4687,9 +4687,9 @@ GameObject:
   - component: {fileID: 8776273400586493605}
   - component: {fileID: 2358842456707530666}
   - component: {fileID: 6698783874576707260}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4767,8 +4767,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5965260335979421809}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -4798,9 +4798,9 @@ GameObject:
   - component: {fileID: 6217241062138797010}
   - component: {fileID: 6265771165992350580}
   - component: {fileID: 3096839718025892720}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01 (2)
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4878,8 +4878,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6203986307076826388}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -4909,9 +4909,9 @@ GameObject:
   - component: {fileID: 6212270852503406518}
   - component: {fileID: 6235802194099056400}
   - component: {fileID: 3063670351121272596}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4989,8 +4989,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6225808730626750832}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -5016,9 +5016,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3043564505276139213}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (12)
-  m_TagString: Untagged
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5054,9 +5054,9 @@ GameObject:
   - component: {fileID: 6410810057182927650}
   - component: {fileID: 6362367620997018500}
   - component: {fileID: 2613769319882134400}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01 (1)
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5134,8 +5134,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6388121483860846052}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -5161,7 +5161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8403266169671444316}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5199,9 +5199,9 @@ GameObject:
   - component: {fileID: 6558746616331107805}
   - component: {fileID: 6609374605581702523}
   - component: {fileID: 2861868044437009791}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01 (1)
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5279,8 +5279,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6581366743875650331}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -5694,9 +5694,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7675508994427117022}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (4)
-  m_TagString: Untagged
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6023,9 +6023,9 @@ GameObject:
   - component: {fileID: 7349901909912026306}
   - component: {fileID: 7402922436601042020}
   - component: {fileID: 1923639876369331296}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -6103,8 +6103,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7372664974100365828}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -6425,9 +6425,9 @@ GameObject:
   - component: {fileID: 8019059179388707237}
   - component: {fileID: 8067360584923220227}
   - component: {fileID: 1439840476194466055}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01 (1)
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -6505,8 +6505,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8005575726008786787}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -6532,7 +6532,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7983957617430595223}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6566,9 +6566,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2702135075026321969}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (9)
-  m_TagString: Untagged
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6600,7 +6600,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7498532184217590553}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6638,9 +6638,9 @@ GameObject:
   - component: {fileID: 8500530021978436769}
   - component: {fileID: 8452022194712337415}
   - component: {fileID: 668168382248467459}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01 (2)
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -6718,8 +6718,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8477776053562215015}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -6846,9 +6846,9 @@ GameObject:
   - component: {fileID: 2850118284666712065}
   - component: {fileID: 7340321324596128242}
   - component: {fileID: 7762583736945045001}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01 (1)
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -6926,8 +6926,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8496448690054989353}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -6957,9 +6957,9 @@ GameObject:
   - component: {fileID: 5496018856415517357}
   - component: {fileID: 8539598853747996036}
   - component: {fileID: 5412365007497102640}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01 (2)
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -7037,8 +7037,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8530954547931899825}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -7262,9 +7262,9 @@ GameObject:
   - component: {fileID: 8858023293015184577}
   - component: {fileID: 8814225220921785447}
   - component: {fileID: 458304888683502691}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Water 01 (1)
-  m_TagString: Obstacle
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -7342,8 +7342,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8844764158394935815}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: -0.51143277, z: 0}
@@ -7369,9 +7369,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 857981524777960405}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (7)
-  m_TagString: Untagged
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7403,9 +7403,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6836756022569313036}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (3)
-  m_TagString: Untagged
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7534,9 +7534,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 367652446823703220}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (6)
-  m_TagString: Untagged
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
