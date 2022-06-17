@@ -95,6 +95,7 @@ namespace Manager
             data.TotalCoins = PlayerPrefs.GetInt("TotalCoins");
             data.TotalGems = PlayerPrefs.GetInt("TotalGems");
 
+            data.HighScore = PlayerPrefs.GetInt("HighScore");
             data.Level = PlayerPrefs.GetInt("Level");
             data.CurrentXP = PlayerPrefs.GetInt("CurrentXP");
             data.TotalXP = PlayerPrefs.GetInt("TotalXP");
@@ -112,9 +113,11 @@ namespace Manager
             data.TotalCoins = 0;
             data.TotalGems = 0;
             
+            data.HighScore = 0;
             data.Level = 1;
             data.CurrentXP = 0;
             data.TotalXP = 250;
+  
             
             SetIsUnlockedCharacterList();
             SetSelectedCharacterList();

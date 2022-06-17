@@ -32,6 +32,7 @@ namespace Menus
         {
             MenuManager.SwitchMenu(MenuType.LevelMenu);
             levelMenu.UpdateCoins();
+            levelMenu.UpdateScore();
         }
     }
 }

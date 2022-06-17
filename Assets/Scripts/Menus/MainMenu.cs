@@ -12,6 +12,8 @@ namespace Menus
     public class MainMenu : MonoBehaviour
     {
         [SerializeField] private PlayerController playerController;
+
+        [SerializeField] private TextMeshProUGUI highScoreText;
         
         [SerializeField] private Button playButton;
         [SerializeField] private Button missionButton;
@@ -26,6 +28,8 @@ namespace Menus
             shopButton.onClick.AddListener(Shop);
             settingsButton.onClick.AddListener(Settings);
             statsButton.onClick.AddListener(Stats);
+
+            playerController.dataManager.data.UpdateScoreDelegate += UpdateHighScoreText;
         }
 
         private void Play()
@@ -36,6 +40,11 @@ namespace Menus
             playerController.playerStats.UpdateCoinsText();
         }
 
+        private void UpdateHighScoreText()
+        {
+            highScoreText.text = $"High Score: {playerController.dataManager.data.HighScore.ToString()}";
+        }
+        
         private void Mission()
         {
             MenuManager.SwitchMenu(MenuType.MissionsMenu);

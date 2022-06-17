@@ -13,6 +13,7 @@ namespace Menus
         [SerializeField] private DataManager dataManager;
         [SerializeField] private PlayerController playerController;
         
+        [SerializeField] private TextMeshProUGUI scoreText;
         [SerializeField] private TextMeshProUGUI coinsText;
         [SerializeField] private TextMeshProUGUI xpText;
 
@@ -31,7 +32,17 @@ namespace Menus
             PlayerPrefs.SetInt("TotalCoins", dataManager.data.TotalCoins);
         }
 
+        public void UpdateScore()
+        {
+            scoreText.text = $"Score: {playerController.playerStats.score}";
 
+            if (playerController.playerStats.score > dataManager.data.HighScore)
+            {
+                dataManager.data.HighScore = (int) playerController.playerStats.score;
+            }
+        }
+        
+        
         public void UpdateXpText(string value)
         {
             xpText.text = value;
