@@ -14,6 +14,7 @@ namespace Menus.Shop
 
         [SerializeField] private int miniumImage;
         [SerializeField] private int imageSize; 
+        [SerializeField] private int paddingSize; 
         
         private GameObject go;
         private Image characterImage;
@@ -31,7 +32,7 @@ namespace Menus.Shop
         {
             if (miniumImage < charactersMenu.dataManager.CharactersList.Count - 1)
             {
-                contentPort.GetComponent<RectTransform>().offsetMax = new Vector2(imageSize * ((charactersMenu.dataManager.CharactersList.Count) - miniumImage), 0);
+                contentPort.GetComponent<RectTransform>().offsetMax = new Vector2((imageSize + paddingSize) * ((charactersMenu.dataManager.CharactersList.Count) - miniumImage), 0);
             }
 
             for (var index = 0; index < charactersMenu.dataManager.CharactersList.Count; index++)

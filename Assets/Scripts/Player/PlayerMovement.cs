@@ -59,6 +59,7 @@ namespace Player
             if (isGrounded && jumped)
             {
                 playerController.SetPlayerSubBehaviour(SubBehaviour.Nothing);
+                playerController.animator.SetBool("isJumping", false);
                 jumped = false;
             }
             
@@ -81,11 +82,13 @@ namespace Player
             if (playerController.playerInput.GetLeftInput())
             {
                 SwitchLane(Vector2.left);
+                playerController.animator.SetTrigger("strafeLeft");
             }
             //Input for moving Right
             if (playerController.playerInput.GetRightInput())
             {
                 SwitchLane(Vector2.right);
+                playerController.animator.SetTrigger("strafeRight");
             }
             
             HandleLane();
@@ -175,6 +178,7 @@ namespace Player
         {
             if (isGrounded && !jumped)
             {
+                playerController.animator.SetBool("isJumping", true);
                 direction.y = jumpForce;
                 await Task.Delay(TimeSpan.FromSeconds(0.5f));
                 jumped = true;
@@ -183,6 +187,7 @@ namespace Player
         
         private async void Slide()
         {
+            playerController.animator.SetBool("isJumping", false);
             jumped = false;
             direction.y = gravity;
             
