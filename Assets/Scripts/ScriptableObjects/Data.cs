@@ -9,6 +9,14 @@ namespace ScriptableObjects
         public string PlayerName { get => playerName; set => playerName = value; }
 
         /// <summary>
+        /// Score
+        /// </summary>
+        public delegate void UpdateScore();
+        public UpdateScore UpdateScoreDelegate;
+        [SerializeField] private int highScore;
+        public int HighScore { get => highScore; set { highScore = value; UpdateScoreDelegate?.Invoke(); PlayerPrefs.SetInt("HighScore", HighScore); }}
+        
+        /// <summary>
         /// Coins
         /// </summary>
         public delegate void UpdateCoins();
