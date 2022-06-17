@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc558fc646c77924eb2c527665194eda, type: 3}
+  m_Name: Bee
+  m_EditorClassIdentifier: 
+  name: Bee
+  description: 
+  price: 1000
+  isSelected: 0
+  isUnlocked: 0
+  prefab: {fileID: 1809620764874546, guid: 42a6432e0f39b054392c8f7ae78c4b8e, type: 3}
+  shopPrefab: {fileID: 1809620764874546, guid: 47799590a09a0164d9a836d62c07b849, type: 3}
+  shopImage: {fileID: 21300000, guid: a20b7f519e9f9424991c19d75099c695, type: 3}

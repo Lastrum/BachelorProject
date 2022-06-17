@@ -39,6 +39,7 @@ namespace Menus
             if (playerController.playerStats.score > dataManager.data.HighScore)
             {
                 dataManager.data.HighScore = (int) playerController.playerStats.score;
+                scoreText.text = $"New Best Score: {playerController.playerStats.score}";
             }
         }
         

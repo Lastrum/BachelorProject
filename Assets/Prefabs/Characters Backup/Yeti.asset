@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc558fc646c77924eb2c527665194eda, type: 3}
+  m_Name: Yeti
+  m_EditorClassIdentifier: 
+  name: Yeti
+  description: 
+  price: 1
+  isSelected: 0
+  isUnlocked: 0
+  prefab: {fileID: 1945279663221710, guid: 6d30e05c04d68e7419eccf4bb2037b9e, type: 3}
+  shopPrefab: {fileID: 1945279663221710, guid: 9e806379e58990749b2cd7f2726c0c56, type: 3}
+  shopImage: {fileID: 21300000, guid: c9f2bcd39cf8c2549bf0abdd7a582477, type: 3}
