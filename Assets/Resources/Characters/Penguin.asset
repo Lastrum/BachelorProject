@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Penguin
   description: 
-  price: 1000
-  isSelected: 0
-  isUnlocked: 0
+  price: 1
+  isSelected: 1
+  isUnlocked: 1
   prefab: {fileID: 1987394279884368, guid: 522c9dbe0cde7f64a88811d117cc1f35, type: 3}
   shopPrefab: {fileID: 1987394279884368, guid: c65a0c051510db347ab2a35f9719b792, type: 3}
-  shopImage: {fileID: 21300000, guid: 89341e47c5516344997740115840a698, type: 3}
+  shopImage: {fileID: 21300000, guid: c9f2bcd39cf8c2549bf0abdd7a582477, type: 3}

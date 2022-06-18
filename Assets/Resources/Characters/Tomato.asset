@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Tomato
   description: 
-  price: 1000
+  price: 1
   isSelected: 0
   isUnlocked: 0
   prefab: {fileID: 1358815738450740, guid: 33c7a8b3b782d0444b99d7e5d97045b3, type: 3}
   shopPrefab: {fileID: 1358815738450740, guid: 2fa3410700e43464e8e297897d83fda8, type: 3}
-  shopImage: {fileID: 21300000, guid: 928733f51fb44bc46a5a16ff947d072b, type: 3}
+  shopImage: {fileID: 21300000, guid: c9f2bcd39cf8c2549bf0abdd7a582477, type: 3}

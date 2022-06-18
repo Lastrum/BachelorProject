@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Fox
   description: 
-  price: 1000
+  price: 1
   isSelected: 0
   isUnlocked: 0
   prefab: {fileID: 1712699290202592, guid: ef3a52fb63d032b4fb74c0d5dac26ba3, type: 3}
   shopPrefab: {fileID: 1712699290202592, guid: 92cc709d81a1aee48832eefc1f66830a, type: 3}
-  shopImage: {fileID: 21300000, guid: f1462ad2d90e3e94191b8c0c857497f2, type: 3}
+  shopImage: {fileID: 21300000, guid: c9f2bcd39cf8c2549bf0abdd7a582477, type: 3}

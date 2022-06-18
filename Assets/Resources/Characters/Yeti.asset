@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Yeti
   description: 
-  price: 1000
+  price: 1
   isSelected: 0
   isUnlocked: 0
   prefab: {fileID: 1945279663221710, guid: 6d30e05c04d68e7419eccf4bb2037b9e, type: 3}
   shopPrefab: {fileID: 1945279663221710, guid: 9e806379e58990749b2cd7f2726c0c56, type: 3}
-  shopImage: {fileID: 21300000, guid: 6d31eebd1e4cd234abbd4c6bf04dace3, type: 3}
+  shopImage: {fileID: 21300000, guid: c9f2bcd39cf8c2549bf0abdd7a582477, type: 3}
