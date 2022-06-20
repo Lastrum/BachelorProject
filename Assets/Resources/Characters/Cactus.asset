@@ -19,4 +19,4 @@ MonoBehaviour:
   isUnlocked: 0
   prefab: {fileID: 1624753320278686, guid: 17a03d0535114804491678abcd75323b, type: 3}
   shopPrefab: {fileID: 1624753320278686, guid: 02d956738a807de41ad284ebe2e4c434, type: 3}
-  shopImage: {fileID: 21300000, guid: d479084be61db1248a6cfe99ef784d80, type: 3}
+  shopImage: {fileID: 21300000, guid: af76faa7f6ecb7a45857094dedda2efe, type: 3}

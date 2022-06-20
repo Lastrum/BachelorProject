@@ -16,7 +16,7 @@ MonoBehaviour:
   description: 
   price: 1
   isSelected: 0
-  isUnlocked: 1
+  isUnlocked: 0
   prefab: {fileID: 643872718415362496, guid: 9bf2c04fa19ded541883d152eaf1a482, type: 3}
   shopPrefab: {fileID: 3144378578213597482, guid: 9f494da85e4e9be4bb00b8b42c15682e, type: 3}
   shopImage: {fileID: 21300000, guid: d479084be61db1248a6cfe99ef784d80, type: 3}
